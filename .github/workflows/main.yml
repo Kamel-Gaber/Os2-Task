@@ -1,1 +1,22 @@
+on:
+  push:
+    branche:
+      - main 
 
+
+
+
+
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+     
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: "login to Docker hub "
+        run: docker login --username Kamelgaber --password dckr_pat_rEENjGXaE4F4IB_kRe1rSDZ3Hec
